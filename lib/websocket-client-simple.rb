@@ -4,7 +4,6 @@ require 'socket'
 require 'openssl'
 require 'uri'
 
-require 'websocket-client-simple/version'
 require 'websocket-client-simple/client'
 
 module WebSocket
