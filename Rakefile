@@ -50,3 +50,6 @@ Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
+require 'gemfury/tasks'
+Gemfury.account = "nedap-healthcare"
+task :release => 'fury:release'

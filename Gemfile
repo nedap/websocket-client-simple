@@ -10,4 +10,5 @@ group :development do
   gem "websocket-eventmachine-server"
   gem "eventmachine"
   gem "jeweler", "~> 2.2.1"
+  gem "gemfury"
 end
