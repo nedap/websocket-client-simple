@@ -23,6 +23,8 @@ module WebSocket
             ctx = OpenSSL::SSL::SSLContext.new
             ctx.ssl_version = options[:ssl_version] || 'SSLv23'
             ctx.verify_mode = options[:verify_mode] || OpenSSL::SSL::VERIFY_NONE #use VERIFY_PEER for verification
+            ctx.cert = options.fetch(:ssl_certificate)
+            ctx.key = options.fetch(:ssl_private_key)
             cert_store = OpenSSL::X509::Store.new
             cert_store.set_default_paths
             ctx.cert_store = cert_store
