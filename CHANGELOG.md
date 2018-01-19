@@ -1,5 +1,8 @@
 # Change Log
 
+## [v0.5.0](https://github.com/nedap/websocket-client-simple/tree/v0.5.0) (2018-01-19)
+[Full Changelog](https://github.com/nedap/websocket-client-simple/compare/v0.4.1...v0.5.0)
+
 ## [v0.4.1](https://github.com/nedap/websocket-client-simple/tree/v0.4.1) (2017-11-22)
 [Full Changelog](https://github.com/nedap/websocket-client-simple/compare/v0.4.0...v0.4.1)
 
