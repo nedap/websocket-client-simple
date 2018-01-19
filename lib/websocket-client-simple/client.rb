@@ -29,7 +29,19 @@ module WebSocket
             cert_store.set_default_paths
             ctx.cert_store = cert_store
             @socket = ::OpenSSL::SSL::SSLSocket.new(@socket, ctx)
+
+            # Close the underlying socket as well, when the SSL/TLS
+            # connection is shut down
+            @socket.sync_close = true
+
+            # Server Name Indication (SNI) RFC 3546
+            @socket.hostname = uri.host if @socket.respond_to? :hostname=
+
+            # Do SSL handshake
             @socket.connect
+
+            # Perform hostname verification following RFC 6125.
+            @socket.post_connection_check(uri.host)
           end
           @handshake = ::WebSocket::Handshake::Client.new :url => url, :headers => options[:headers]
           @handshaked = false
