@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib".freeze]
   s.authors = ["Sho Hashimoto".freeze, "Dominik Fijas".freeze]
-  s.date = "2018-01-19"
+  s.date = "2018-03-01"
   s.description = "Simple WebSocket Client for Ruby".freeze
   s.email = "dominik.fijas@nedap.com".freeze
   s.extra_rdoc_files = [
@@ -42,7 +42,7 @@ Gem::Specification.new do |s|
   ]
   s.homepage = "https://github.com/shokai/websocket-client-simple".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "2.6.8".freeze
+  s.rubygems_version = "2.6.12".freeze
   s.summary = "Simple WebSocket Client for Ruby".freeze
 
   if s.respond_to? :specification_version then
