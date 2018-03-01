@@ -38,7 +38,7 @@ Gem::Specification.new do |s|
     "test/test_connect_block.rb",
     "test/test_helper.rb",
     "test/test_websocket_client_simple.rb",
-    "websocket-client-simple.gemspec"
+    "websocket-client-simple-nedap.gemspec"
   ]
   s.homepage = "https://github.com/shokai/websocket-client-simple".freeze
   s.licenses = ["MIT".freeze]
