@@ -14,7 +14,7 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
-  gem.name = "websocket-client-simple"
+  gem.name = "websocket-client-simple-nedap"
   gem.homepage = "https://github.com/shokai/websocket-client-simple"
   gem.license = "MIT"
   gem.summary = %q{Simple WebSocket Client for Ruby}
