@@ -30,15 +30,6 @@ Gem::Specification.new do |s|
     "circle.yml",
     "lib/websocket-client-simple.rb",
     "lib/websocket-client-simple/client.rb",
-    "sample/ack_server.rb",
-    "sample/client.rb",
-    "sample/echo_server.rb",
-    "sample/webbrowser/index.html",
-    "sample/webbrowser/main.js",
-    "test/echo_server.rb",
-    "test/test_connect_block.rb",
-    "test/test_helper.rb",
-    "test/test_websocket_client_simple.rb",
     "websocket-client-simple-nedap.gemspec"
   ]
   s.homepage = "https://github.com/shokai/websocket-client-simple".freeze

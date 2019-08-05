@@ -21,6 +21,7 @@ Jeweler::Tasks.new do |gem|
   gem.description = %q{Simple WebSocket Client for Ruby}
   gem.email = "dominik.fijas@nedap.com"
   gem.authors = ["Sho Hashimoto", "Dominik Fijas"]
+  gem.files.exclude /^(test|sample)\/.*/
   # dependencies defined in Gemfile
 end
 
