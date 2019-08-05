@@ -15,19 +15,15 @@ Gem::Specification.new do |s|
   s.description = "Simple WebSocket Client for Ruby".freeze
   s.email = "dominik.fijas@nedap.com".freeze
   s.extra_rdoc_files = [
-    "LICENSE.txt",
     "README.md"
   ]
   s.files = [
     ".ruby-version",
     "CHANGELOG.md",
     "Gemfile",
-    "History.txt",
-    "LICENSE.txt",
     "README.md",
     "Rakefile",
     "VERSION",
-    "circle.yml",
     "lib/websocket-client-simple.rb",
     "lib/websocket-client-simple/client.rb",
     "websocket-client-simple-nedap.gemspec"
