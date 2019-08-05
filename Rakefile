@@ -15,13 +15,17 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
   gem.name = "websocket-client-simple-nedap"
-  gem.homepage = "https://github.com/shokai/websocket-client-simple"
+  gem.homepage = "https://github.com/nedap/websocket-client-simple-nedap"
   gem.license = "MIT"
   gem.summary = %q{Simple WebSocket Client for Ruby}
   gem.description = %q{Simple WebSocket Client for Ruby}
   gem.email = "dominik.fijas@nedap.com"
   gem.authors = ["Sho Hashimoto", "Dominik Fijas"]
   gem.files.exclude /^(test|sample)\/.*/
+  gem.metadata = {
+    "changelog_uri" => "https://github.com/nedap/websocket-client-simple-nedap/blob/master/CHANGELOG.md",
+    "homepage_uri" => "https://github.com/nedap/websocket-client-simple-nedap"
+  }
   # dependencies defined in Gemfile
 end
 

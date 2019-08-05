@@ -9,6 +9,7 @@ Gem::Specification.new do |s|
   s.version = "1.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
+  s.metadata = { "changelog_uri" => "https://github.com/nedap/websocket-client-simple-nedap/blob/master/CHANGELOG.md", "homepage_uri" => "https://github.com/nedap/websocket-client-simple-nedap" } if s.respond_to? :metadata=
   s.require_paths = ["lib".freeze]
   s.authors = ["Sho Hashimoto".freeze, "Dominik Fijas".freeze]
   s.date = "2019-08-05"
@@ -29,7 +30,7 @@ Gem::Specification.new do |s|
     "lib/websocket-client-simple/client.rb",
     "websocket-client-simple-nedap.gemspec"
   ]
-  s.homepage = "https://github.com/shokai/websocket-client-simple".freeze
+  s.homepage = "https://github.com/nedap/websocket-client-simple-nedap".freeze
   s.licenses = ["MIT".freeze]
   s.rubygems_version = "3.0.3".freeze
   s.summary = "Simple WebSocket Client for Ruby".freeze
