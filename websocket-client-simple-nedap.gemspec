@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".ruby-version",
+    ".semaphore/semaphore.yml",
     "CHANGELOG.md",
     "Gemfile",
     "README.md",
@@ -39,7 +40,7 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<websocket>.freeze, [">= 0"])
       s.add_runtime_dependency(%q<event_emitter>.freeze, [">= 0"])
-      s.add_development_dependency(%q<bundler>.freeze, ["~> 1.3"])
+      s.add_development_dependency(%q<bundler>.freeze, [">= 0"])
       s.add_development_dependency(%q<rake>.freeze, [">= 0"])
       s.add_development_dependency(%q<websocket-eventmachine-server>.freeze, [">= 0"])
       s.add_development_dependency(%q<eventmachine>.freeze, [">= 0"])
@@ -48,7 +49,7 @@ Gem::Specification.new do |s|
     else
       s.add_dependency(%q<websocket>.freeze, [">= 0"])
       s.add_dependency(%q<event_emitter>.freeze, [">= 0"])
-      s.add_dependency(%q<bundler>.freeze, ["~> 1.3"])
+      s.add_dependency(%q<bundler>.freeze, [">= 0"])
       s.add_dependency(%q<rake>.freeze, [">= 0"])
       s.add_dependency(%q<websocket-eventmachine-server>.freeze, [">= 0"])
       s.add_dependency(%q<eventmachine>.freeze, [">= 0"])
@@ -58,7 +59,7 @@ Gem::Specification.new do |s|
   else
     s.add_dependency(%q<websocket>.freeze, [">= 0"])
     s.add_dependency(%q<event_emitter>.freeze, [">= 0"])
-    s.add_dependency(%q<bundler>.freeze, ["~> 1.3"])
+    s.add_dependency(%q<bundler>.freeze, [">= 0"])
     s.add_dependency(%q<rake>.freeze, [">= 0"])
     s.add_dependency(%q<websocket-eventmachine-server>.freeze, [">= 0"])
     s.add_dependency(%q<eventmachine>.freeze, [">= 0"])

@@ -4,7 +4,7 @@ gem "websocket"
 gem "event_emitter"
 
 group :development do
-  gem "bundler", "~> 1.3"
+  gem "bundler"
   gem "rake"
   gem "websocket-eventmachine-server"
   gem "eventmachine"
