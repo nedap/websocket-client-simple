@@ -1,0 +1,19 @@
+# For more Ruby information and examples, see
+# https://docs.semaphoreci.com/article/73-ruby
+version: v1.0
+name: Run tests
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: Setup and test
+    task:
+      prologue:
+        commands:
+          - checkout
+          - bundle update
+      jobs:
+        - name: Run tests
+          commands:
+            - bundle exec rake test
