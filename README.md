@@ -1,81 +1,21 @@
-websocket-client-simple
+websocket-client-simple-nedap
 =======================
-Simple WebSocket Client for Ruby
 
-- https://github.com/shokai/websocket-client-simple
-- https://rubygems.org/gems/websocket-client-simple
+Forked from https://github.com/shokai/websocket-client-simple
+See original README [here](https://github.com/shokai/websocket-client-simple/blob/master/README.md)
 
-[![Circle CI](https://circleci.com/gh/shokai/websocket-client-simple.svg?style=svg)](https://circleci.com/gh/shokai/websocket-client-simple)
-
-Installation
-------------
-
-    gem install websocket-client-simple
-
-
-Usage
------
-```ruby
-require 'rubygems'
-require 'websocket-client-simple'
-
-ws = WebSocket::Client::Simple.connect 'ws://example.com:8888'
-
-ws.on :message do |msg|
-  puts msg.data
-end
-
-ws.on :open do
-  ws.send 'hello!!!'
-end
-
-ws.on :close do |e|
-  p e
-  exit 1
-end
-
-ws.on :error do |e|
-  p e
-end
-
-loop do
-  ws.send STDIN.gets.strip
-end
+## Tests
+```
+bundle exec rake test
 ```
 
-`connect` runs a given block before connecting websocket
+## Releases
 
-```ruby
-WebSocket::Client::Simple.connect 'ws://example.com:8888' do |ws|
-  ws.on :open do
-    puts "connect!"
-  end
+To create a new release follow these steps:
 
-  ws.on :message do |msg|
-    puts msg.data
-  end
-end
-```
-
-
-Sample
-------
-[websocket chat](https://github.com/shokai/websocket-client-simple/tree/master/sample)
-
-
-Test
-----
-
-    % gem install bundler
-    % bundle install
-    % export WS_PORT=8888
-    % rake test
-
-
-Contributing
-------------
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+- `bundle exec rake version:bump:minor` to bump the version (it could be 'patch' or 'major' in other cases)
+- `bundle exec rake release` (this does a couple of things, incl. uploading generated .gem file to Gemfury)
+- `bundle exec github_changelog_generator -t MY_TOKEN_FROM_GITHUB` (to regenerate the changelog)
+- `git add CHANGELOG.md`
+- `git commit -m 'Update the CHANGELOG'`
+- `git push origin master`
