@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib".freeze]
   s.authors = ["Sho Hashimoto".freeze, "Dominik Fijas".freeze]
-  s.date = "2018-03-09"
+  s.date = "2019-08-05"
   s.description = "Simple WebSocket Client for Ruby".freeze
   s.email = "dominik.fijas@nedap.com".freeze
   s.extra_rdoc_files = [
@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
     "README.md"
   ]
   s.files = [
+    ".ruby-version",
     "CHANGELOG.md",
     "Gemfile",
     "History.txt",
@@ -42,7 +43,7 @@ Gem::Specification.new do |s|
   ]
   s.homepage = "https://github.com/shokai/websocket-client-simple".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "2.6.12".freeze
+  s.rubygems_version = "3.0.3".freeze
   s.summary = "Simple WebSocket Client for Ruby".freeze
 
   if s.respond_to? :specification_version then
@@ -53,7 +54,6 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<event_emitter>.freeze, [">= 0"])
       s.add_development_dependency(%q<bundler>.freeze, ["~> 1.3"])
       s.add_development_dependency(%q<rake>.freeze, [">= 0"])
-      s.add_development_dependency(%q<minitest>.freeze, [">= 0"])
       s.add_development_dependency(%q<websocket-eventmachine-server>.freeze, [">= 0"])
       s.add_development_dependency(%q<eventmachine>.freeze, [">= 0"])
       s.add_development_dependency(%q<jeweler>.freeze, ["~> 2.2.1"])
@@ -63,7 +63,6 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<event_emitter>.freeze, [">= 0"])
       s.add_dependency(%q<bundler>.freeze, ["~> 1.3"])
       s.add_dependency(%q<rake>.freeze, [">= 0"])
-      s.add_dependency(%q<minitest>.freeze, [">= 0"])
       s.add_dependency(%q<websocket-eventmachine-server>.freeze, [">= 0"])
       s.add_dependency(%q<eventmachine>.freeze, [">= 0"])
       s.add_dependency(%q<jeweler>.freeze, ["~> 2.2.1"])
@@ -74,7 +73,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<event_emitter>.freeze, [">= 0"])
     s.add_dependency(%q<bundler>.freeze, ["~> 1.3"])
     s.add_dependency(%q<rake>.freeze, [">= 0"])
-    s.add_dependency(%q<minitest>.freeze, [">= 0"])
     s.add_dependency(%q<websocket-eventmachine-server>.freeze, [">= 0"])
     s.add_dependency(%q<eventmachine>.freeze, [">= 0"])
     s.add_dependency(%q<jeweler>.freeze, ["~> 2.2.1"])
