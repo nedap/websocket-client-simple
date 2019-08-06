@@ -47,6 +47,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<eventmachine>.freeze, [">= 0"])
       s.add_development_dependency(%q<jeweler>.freeze, ["~> 2.2.1"])
       s.add_development_dependency(%q<gemfury>.freeze, [">= 0"])
+      s.add_development_dependency(%q<github_changelog_generator>.freeze, [">= 0"])
     else
       s.add_dependency(%q<websocket>.freeze, [">= 0"])
       s.add_dependency(%q<event_emitter>.freeze, [">= 0"])
@@ -56,6 +57,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<eventmachine>.freeze, [">= 0"])
       s.add_dependency(%q<jeweler>.freeze, ["~> 2.2.1"])
       s.add_dependency(%q<gemfury>.freeze, [">= 0"])
+      s.add_dependency(%q<github_changelog_generator>.freeze, [">= 0"])
     end
   else
     s.add_dependency(%q<websocket>.freeze, [">= 0"])
@@ -66,6 +68,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<eventmachine>.freeze, [">= 0"])
     s.add_dependency(%q<jeweler>.freeze, ["~> 2.2.1"])
     s.add_dependency(%q<gemfury>.freeze, [">= 0"])
+    s.add_dependency(%q<github_changelog_generator>.freeze, [">= 0"])
   end
 end
 

@@ -10,6 +10,7 @@ group :development do
   gem "eventmachine"
   gem "jeweler", "~> 2.2.1"
   gem "gemfury"
+  gem "github_changelog_generator"
 end
 
 group :test do
