@@ -1,5 +1,13 @@
 # Change Log
 
+## [v1.1.0](https://github.com/nedap/websocket-client-simple-nedap/tree/v1.1.0) (2019-08-06)
+[Full Changelog](https://github.com/nedap/websocket-client-simple-nedap/compare/v1.0.0...v1.1.0)
+
+**Merged pull requests:**
+
+- Explicitly load all required websocket files [\#5](https://github.com/nedap/websocket-client-simple-nedap/pull/5) ([domininik](https://github.com/domininik))
+- Update development and tests related files \(incl. Semaphore setup\) [\#4](https://github.com/nedap/websocket-client-simple-nedap/pull/4) ([domininik](https://github.com/domininik))
+
 ## [v1.0.0](https://github.com/nedap/websocket-client-simple-nedap/tree/v1.0.0) (2018-03-09)
 [Full Changelog](https://github.com/nedap/websocket-client-simple-nedap/compare/v0.5.0...v1.0.0)
 
