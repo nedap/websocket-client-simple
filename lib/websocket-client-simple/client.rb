@@ -1,4 +1,5 @@
 require 'websocket/handshake/client'
+require 'websocket/frame/data'
 require 'websocket/frame/incoming/client'
 require 'websocket/frame/outgoing/client'
 
