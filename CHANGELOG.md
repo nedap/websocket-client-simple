@@ -1,5 +1,12 @@
 # Change Log
 
+## [v1.1.1](https://github.com/nedap/websocket-client-simple-nedap/tree/v1.1.1) (2019-10-29)
+[Full Changelog](https://github.com/nedap/websocket-client-simple-nedap/compare/v1.1.0...v1.1.1)
+
+**Merged pull requests:**
+
+- Explicitly load 'websocket/frame/data' to resolve autoloading issue [\#6](https://github.com/nedap/websocket-client-simple-nedap/pull/6) ([domininik](https://github.com/domininik))
+
 ## [v1.1.0](https://github.com/nedap/websocket-client-simple-nedap/tree/v1.1.0) (2019-08-06)
 [Full Changelog](https://github.com/nedap/websocket-client-simple-nedap/compare/v1.0.0...v1.1.0)
 
